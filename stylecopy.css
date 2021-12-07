@@ -1,0 +1,405 @@
+@import "fonts";
+
+/* ========= Reset styles ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(.5em + .5vw);
+}
+:root {
+    --bgColor: rgb(6, 41, 43);
+    --fontFamily: 'Oswald', sans-serif;
+    --color: rgb(12, 165, 211);
+    --fontSize: 1em;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #000;  
+}
+body {
+    font-family: sans-serif;
+    color: rgb(82, 82, 82);
+    font-weight: lighter;
+    font-size: 1em;
+}
+/* ======== ======= */
+header, footer {
+    background-color: var(--bgColor);
+    width: 100%;
+}
+header nav ul {
+    width: auto;
+}
+
+/* ========= Pseudoraspork styles ========= */
+header .header-top::after, 
+header nav ul::after,
+header .header-bottom::after,
+main section.dots ul::after,
+main article.services::after,
+main article.services section.double-block::after,
+main article.recent-work::after,
+main article.link::after,
+footer::after,
+footer nav ul::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* ========= Header styles ========= */
+header {
+    margin-bottom: 2em;
+    padding: 2em 8em 1em;
+    background: radial-gradient(8% 17% at 16% -8%, rgb(6, 41, 43), teal, rgb(6, 41, 43));
+}
+
+/* ========= Header-top styles ========= */
+header .header-top {
+    width: 100%;
+    margin-bottom: 1em;
+    display: flex;
+
+}
+header .header-top section.logo {
+    width: auto;
+    font-weight: 100;
+    margin: auto;
+    margin-left: 0;  
+}
+header .header-top section.logo h2 {
+    font-family: var(--fontFamily);
+    color: rgb(220, 232, 236);
+    font-size: 2.5em;
+}
+header .header-top nav {
+    width: auto;
+    margin: auto;
+    margin-right: 0;
+}
+header .header-top nav ul li {
+    float: left; 
+    margin-right: 2em;
+    font-size: 1.2em; 
+    color: rgb(12, 165, 211);
+}
+header .header-top nav ul li:last-child {
+    margin-right: 0;
+}
+header .header-top nav ul li a {
+    color: rgb(62, 116, 128);
+}
+header .header-top nav ul li a:hover {
+    background-color: rgb(12, 165, 211);
+    padding: .5em .5em;
+    border-radius: 4px; 
+    color: #fff;
+}
+
+/* ========= Header-bottom styles ========= */
+
+header hr.radial {
+    width: 80%;
+    height: .15em;
+    margin: auto;
+    background: linear-gradient(to right, rgba(1, 129, 129, .1), 
+    rgb(1, 129, 129, 1), rgba(1, 129, 129, .1));
+    border: none; 
+}
+header .header-bottom {
+    width: 100%;
+    background: radial-gradient(20% 20% at 50% -9%, rgba(18, 36, 38, .1), 
+    rgb(1, 129, 129, 1), rgba(18, 36, 38, .1));
+    padding-top: 2em;
+}
+header .header-bottom section.intro {
+    float: left;
+    width: 22em;
+    margin-right: 2em;
+}
+header .header-bottom section.intro > h1 {
+    font-size: 3.5em;
+    font-weight: 400;
+    color: rgb(220, 232, 236);
+    margin-bottom: .1em;
+}
+header .header-bottom section.intro > h3 {
+    font-size: 2em;
+    color: rgb(220, 232, 236);
+    font-weight: lighter;
+}
+header .header-bottom section.intro > p {
+    font-size: .9em;
+    line-height: 1.4em;
+    color: rgb(62, 125, 131);
+}
+header figure {
+    width: 40em;
+    height: 18em;
+    float: right;
+    background: url("https://st.depositphotos.com/1526816/2883/v/950/depositphotos_28831999-stock-illustration-a-girl-eating-an-ice.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 40%;
+    position: relative;
+}
+figure span.left {
+    content: '<';
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: .5em .5em .5em .3em;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -1.5em;
+}
+figure span.right {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: .5em .3em .5em .5em;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -1.5em;
+}
+figure figcaption {
+    width: 100%;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    color:rgb(201, 198, 181);
+}
+
+/* ========= Main styles ========= */
+main {
+    margin-bottom: 2em;
+    padding: 0 8em 0 7em;
+}
+
+/* ========= Main Dots styles ========= */
+main section.dots {
+    width: 100%;
+    margin-bottom: 2em;
+}
+main section.dots ul {
+    width: 12em;
+    margin: auto;
+    margin-right: 10em;
+}
+main ul li:first-child {
+    border: 1px solid black;
+}
+main ul li {
+    width: .4em;
+    height: .4em;
+    border-radius: 50%;
+    background-color: rgb(170, 170, 170);
+    font-size: 2.5em;
+    float: left;
+    margin-right: 0.5em; 
+}
+main hr.linear {
+    width: 80%;
+    height: .15em;
+    margin: 0 auto;
+    margin-bottom: 2em; 
+    background: linear-gradient(to right, rgba(255,0,0,0), rgb(173, 173, 173), rgba(255,0,0,0));
+    border: none;
+}
+
+
+/* ========= Main Services styles ========= */
+main article.services {
+    width: 100%;
+    margin-bottom: 3em;
+}
+main article.services section.block,
+main article.recent-work section.block {
+    width: calc(100% / 3 - (4em / 3));
+    margin-right: 2em;
+    float: left;
+}
+main article.services section.block:last-of-type {
+    margin-right: 0;
+}
+main article.services section.block section.icon .fa-clock-o,
+main article.services section.block section.icon .fa-calendar, 
+main article.services section.block section.icon .fa-pie-chart {
+    width: auto;
+    font-size: 3.5em;
+    margin-right: .2em;
+} 
+main section.double-block {
+    display: flex;
+    margin-bottom: 1em;
+    
+}
+main section.double-block section.heading {
+    padding-top: 1em;
+}
+main article.services section.block section.icon {
+    width: 3em;
+    height: 3em;
+    background-image: url("./img/css_sprites.png");
+}
+main article.services section.block section.icon1 {
+    background-position: -14px -7px;
+}
+main article.services section.block section.icon2 {
+    background-position: -82px -7px;
+}
+main article.services section.block section.icon3 {
+    background-position: -14px -75px;
+}
+main article.services section.block section.heading {
+    width: auto;
+}
+main article.services section.block section.heading h3{
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin-bottom: .5em;
+}
+main article.services section.block p {
+    font-size: 0.8em;
+    margin-bottom: 2em;
+    line-height: 1.7em;
+}
+main article.services section.block a {
+    background-color: rgb(245, 245, 245);
+    font-size: var(--fontSize);
+    border: 1px solid lightgrey;
+    color: rgb(119, 119, 119);
+    border-radius: 50px;
+    padding: .5em 1.5em;
+    display: block;
+    width: 10em;
+}
+main hr {
+    margin-bottom: 2em;
+}
+
+/* ========= Main Recent Work styles ========= */
+main article.recent-work {
+    width: 100%;
+    margin-bottom: 3em;
+}
+main article.recent-work section.block1 figure.picture {
+    height: 10em;
+    background-image: url("https://wallpaperaccess.com/full/3801813.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border: 2px groove lightgrey;
+    margin-bottom: 1em;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 7px -18px;
+}
+main article.recent-work section.block2 figure.picture {
+    height: 10em;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/354/430/474/abstract-pink-gradient-wallpaper-thumb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border: 2px groove lightgrey;
+    margin-bottom: 1em;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 7px -18px; 
+}
+main article.recent-work section.block3 figure.picture {
+    height: 10em;
+    background-image: url("https://i.pinimg.com/originals/71/c4/9c/71c49c0fa267c2fd9f0f769afa6d702d.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    border: 2px groove lightgrey;
+    margin-bottom: 1em;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 7px -18px;
+}
+main article.recent-work section.block:last-of-type {
+    margin-right: 0;
+}
+main article.recent-work section.block h3 {
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin-bottom: .5em;
+}
+main article.recent-work section.block p {
+    font-size: 0.8em;
+    margin-bottom: 2em;
+    line-height: 1.7em;
+}
+main article.recent-work section.block a {
+    background-color: rgb(245, 245, 245);
+    font-size: var(--fontSize);
+    border: 1px solid lightgrey;
+    color: rgb(119, 119, 119);
+    border-radius: 50px;
+    padding: .5em 1.5em;
+    display: block;
+    width: 10em;
+}
+
+/* ========= Main Link styles ========= */
+main article.link {
+    width: 100%;
+    display: flex;
+}
+main hr {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3em;
+}
+main article.link img {
+    width: 4%;
+    margin-right: 1em;
+    transform: rotateY(180deg);
+}
+main article.link p {
+    width: auto;
+    margin: .5em 0;
+}
+main article.link a {
+    margin: auto;
+    margin-right: 0;
+    font-size: var(--fontSize);
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    color: rgb(128, 128, 128);
+    padding: .8em 2em;
+    background-color: rgb(245, 245, 245);
+}
+
+/* ========= Footer styles ========= */
+footer {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 2em 7em;
+    display: flex;
+}
+footer nav {
+    margin: auto;
+    margin-left: 0;
+}
+footer nav ul li {
+    float: left;
+    margin-right: 2em;
+    font-size: 1.2em;
+}
+footer nav ul li a {
+    color: rgb(62, 116, 128);
+}
+footer nav ul li a:hover {
+    background-color: rgb(12, 165, 211);
+    padding: .5em .5em;
+    border-radius: 4px; 
+    color: #fff;
+}
+footer section.copy p {
+    color: rgb(62, 116, 128); 
+}
+

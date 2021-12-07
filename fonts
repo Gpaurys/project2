@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Oswald R;
+    src: url("./fonts/Oswald/Oswald-VariableFont_wght.ttf")
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Monttserrat R;
+    src: url("../fonts/Montserrat\ \(2\)\ 2/Montserrat-Regular.ttf")
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Monttserrat I;
+    src: url("../fonts/Montserrat\ \(2\)\ 2/Montserrat-Italic.ttf")
+    format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
